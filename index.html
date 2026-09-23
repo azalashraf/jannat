@@ -1,0 +1,1546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Jannat ✨❤️</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+    color: white;
+    background: #080615;
+    overflow-x: hidden;
+}
+
+/* =========================
+   BACKGROUND
+========================= */
+
+.background {
+    position: fixed;
+    inset: 0;
+    z-index: -10;
+
+    background:
+        radial-gradient(circle at 20% 20%, rgba(255, 75, 170, 0.20), transparent 30%),
+        radial-gradient(circle at 80% 25%, rgba(123, 85, 255, 0.22), transparent 32%),
+        radial-gradient(circle at 50% 90%, rgba(65, 100, 255, 0.16), transparent 35%),
+        #080615;
+}
+
+.background::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            rgba(255,255,255,0.015) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            rgba(255,255,255,0.015) 1px,
+            transparent 1px
+        );
+
+    background-size: 50px 50px;
+}
+
+/* =========================
+   STARS
+========================= */
+
+.stars {
+    position: fixed;
+    inset: 0;
+    z-index: -5;
+    pointer-events: none;
+}
+
+.star {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background: white;
+    border-radius: 50%;
+    opacity: 0.7;
+    animation: twinkle 3s infinite ease-in-out;
+}
+
+@keyframes twinkle {
+
+    0%, 100% {
+        opacity: 0.15;
+        transform: scale(0.7);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.3);
+    }
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: min(92%, 1000px);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 14px 20px;
+
+    background: rgba(255,255,255,0.07);
+    border: 1px solid rgba(255,255,255,0.12);
+    backdrop-filter: blur(20px);
+
+    border-radius: 50px;
+
+    z-index: 100;
+}
+
+.logo {
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.music-btn {
+    border: none;
+    color: white;
+
+    background: linear-gradient(
+        135deg,
+        #ff4fa3,
+        #8b5cf6
+    );
+
+    padding: 10px 17px;
+    border-radius: 30px;
+
+    cursor: pointer;
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.music-btn:hover {
+    transform: scale(1.05);
+}
+
+/* =========================
+   GENERAL
+========================= */
+
+section {
+    width: min(1100px, 92%);
+    margin: auto;
+    padding: 120px 0;
+}
+
+.hero {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding-top: 140px;
+}
+
+.hero-content {
+    max-width: 850px;
+}
+
+.badge {
+    display: inline-block;
+
+    padding: 8px 18px;
+    margin-bottom: 25px;
+
+    border-radius: 50px;
+
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.15);
+
+    color: #ffd6ed;
+
+    animation: float 4s ease-in-out infinite;
+}
+
+h1 {
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(42px, 7vw, 82px);
+
+    line-height: 1.05;
+
+    background: linear-gradient(
+        120deg,
+        #ffffff,
+        #ffb6df,
+        #c4b5fd
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    margin-bottom: 30px;
+}
+
+.hero-message {
+    font-size: clamp(17px, 2vw, 21px);
+    line-height: 1.8;
+    color: #ddd9e8;
+}
+
+.highlight {
+    display: block;
+
+    margin: 25px 0;
+
+    font-size: clamp(25px, 4vw, 40px);
+
+    font-weight: 800;
+
+    color: #ff9fd2;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.main-btn {
+    border: none;
+
+    margin-top: 35px;
+
+    padding: 15px 28px;
+
+    border-radius: 50px;
+
+    color: white;
+
+    font-size: 16px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    background: linear-gradient(
+        135deg,
+        #ff4fa3,
+        #8b5cf6
+    );
+
+    box-shadow:
+        0 10px 40px rgba(255,79,163,0.25);
+
+    transition: 0.3s;
+}
+
+.main-btn:hover {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow:
+        0 15px 50px rgba(255,79,163,0.35);
+}
+
+.reveal {
+    max-height: 0;
+    overflow: hidden;
+
+    opacity: 0;
+
+    transition:
+        max-height 0.8s ease,
+        opacity 0.6s ease,
+        margin 0.6s ease;
+}
+
+.reveal.show {
+    max-height: 500px;
+    opacity: 1;
+
+    margin-top: 35px;
+}
+
+/* =========================
+   SECTION TITLE
+========================= */
+
+.section-title {
+    text-align: center;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(32px, 5vw, 55px);
+
+    margin-bottom: 60px;
+
+    background: linear-gradient(
+        120deg,
+        #fff,
+        #ffb4dc,
+        #c8b7ff
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* =========================
+   GLASS CARD
+========================= */
+
+.glass {
+    background: rgba(255,255,255,0.055);
+
+    border: 1px solid rgba(255,255,255,0.11);
+
+    backdrop-filter: blur(20px);
+
+    border-radius: 28px;
+
+    box-shadow:
+        0 20px 60px rgba(0,0,0,0.25);
+}
+
+/* =========================
+   CARDS
+========================= */
+
+.cards {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
+
+    gap: 20px;
+}
+
+.card {
+    padding: 30px;
+
+    min-height: 150px;
+
+    display: flex;
+    align-items: center;
+
+    font-size: 18px;
+    font-weight: 600;
+
+    transition: 0.4s;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.card::before {
+    content: "";
+
+    position: absolute;
+
+    width: 100px;
+    height: 100px;
+
+    border-radius: 50%;
+
+    background: rgba(255,100,180,0.15);
+
+    filter: blur(20px);
+
+    top: -30px;
+    right: -30px;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+
+    border-color: rgba(255,160,215,0.4);
+
+    background: rgba(255,255,255,0.09);
+}
+
+/* =========================
+   BIG MESSAGE
+========================= */
+
+.big-message {
+    padding: 55px;
+
+    text-align: center;
+
+    font-size: 21px;
+    line-height: 2;
+
+    color: #e7e2ef;
+}
+
+/* =========================
+   PROGRESS
+========================= */
+
+.progress-container {
+    margin-top: 35px;
+}
+
+.progress {
+    width: 100%;
+    height: 8px;
+
+    background: rgba(255,255,255,0.08);
+
+    border-radius: 20px;
+
+    overflow: hidden;
+}
+
+.progress-bar {
+    width: 0%;
+    height: 100%;
+
+    background: linear-gradient(
+        90deg,
+        #ff4fa3,
+        #a78bfa
+    );
+
+    border-radius: 20px;
+
+    transition: width 1.5s ease;
+}
+
+/* =========================
+   PERSONAL MESSAGE
+========================= */
+
+.personal {
+    padding: 60px;
+
+    text-align: center;
+
+    font-size: 20px;
+    line-height: 2;
+
+    color: #e9e3ef;
+}
+
+/* =========================
+   PHOTO GALLERY
+========================= */
+
+.gallery {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(230px, 1fr));
+
+    gap: 20px;
+}
+
+.photo {
+    position: relative;
+
+    height: 320px;
+
+    overflow: hidden;
+
+    border-radius: 25px;
+
+    background: rgba(255,255,255,0.06);
+
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 0.7s ease;
+}
+
+.photo:hover img {
+    transform: scale(1.08);
+}
+
+.photo-caption {
+    position: absolute;
+
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    padding: 30px 20px 20px;
+
+    background:
+        linear-gradient(
+            transparent,
+            rgba(0,0,0,0.85)
+        );
+
+    font-weight: 700;
+}
+
+/* =========================
+   FINAL
+========================= */
+
+.final {
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+.final-content {
+    max-width: 850px;
+}
+
+.final-title {
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(40px, 7vw, 75px);
+
+    line-height: 1.1;
+
+    margin-bottom: 30px;
+
+    background: linear-gradient(
+        120deg,
+        #fff,
+        #ffb5dd,
+        #bda9ff
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.final-text {
+    font-size: 20px;
+    line-height: 2;
+
+    color: #ddd7e7;
+}
+
+/* =========================
+   FINAL STAR EFFECT
+========================= */
+
+#celebration {
+    position: fixed;
+
+    inset: 0;
+
+    display: none;
+
+    align-items: center;
+    justify-content: center;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(75,50,150,0.95),
+            rgba(5,4,15,0.98)
+        );
+
+    z-index: 1000;
+
+    text-align: center;
+}
+
+#celebration.active {
+    display: flex;
+
+    animation: fadeIn 0.8s ease;
+}
+
+.celebration-text {
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(35px, 6vw, 70px);
+
+    max-width: 800px;
+
+    line-height: 1.3;
+
+    color: white;
+
+    animation: zoomIn 1s ease;
+}
+
+.celebration-sub {
+    margin-top: 25px;
+
+    font-family: "DM Sans", sans-serif;
+
+    font-size: 18px;
+
+    color: #e6dff1;
+}
+
+.close-celebration {
+    position: absolute;
+
+    top: 30px;
+    right: 30px;
+
+    border: none;
+
+    background: rgba(255,255,255,0.1);
+
+    color: white;
+
+    width: 45px;
+    height: 45px;
+
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    font-size: 20px;
+}
+
+/* =========================
+   FLOATING PARTICLES
+========================= */
+
+.particle {
+    position: fixed;
+
+    pointer-events: none;
+
+    font-size: 20px;
+
+    z-index: 50;
+
+    animation: rise 5s linear forwards;
+}
+
+@keyframes rise {
+
+    0% {
+        transform:
+            translateY(0)
+            scale(0.7);
+
+        opacity: 0;
+    }
+
+    15% {
+        opacity: 1;
+    }
+
+    100% {
+        transform:
+            translateY(-100vh)
+            rotate(360deg)
+            scale(1.3);
+
+        opacity: 0;
+    }
+}
+
+@keyframes float {
+
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+@keyframes fadeIn {
+
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+
+    from {
+        opacity: 0;
+        transform: scale(0.7);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    text-align: center;
+
+    padding: 40px 20px;
+
+    color: #aaa3b5;
+
+    font-size: 14px;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width: 600px) {
+
+    .navbar {
+        top: 10px;
+        padding: 10px 14px;
+    }
+
+    .logo {
+        font-size: 13px;
+    }
+
+    .music-btn {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+
+    section {
+        padding: 90px 0;
+    }
+
+    .hero {
+        padding-top: 120px;
+    }
+
+    .big-message,
+    .personal {
+        padding: 30px 22px;
+    }
+
+    .card {
+        padding: 25px;
+    }
+
+    .photo {
+        height: 280px;
+    }
+
+    .final-text {
+        font-size: 17px;
+    }
+}
+
+</style>
+</head>
+
+
+<body>
+
+<!-- BACKGROUND -->
+<div class="background"></div>
+
+<div class="stars" id="stars"></div>
+
+
+<!-- NAVBAR -->
+
+<nav class="navbar">
+
+    <div class="logo">
+        For Her ✨❤️
+    </div>
+
+    <button
+        class="music-btn"
+        id="musicButton"
+        type="button">
+
+        🎵 Play Music
+
+    </button>
+
+</nav>
+
+
+<!-- MUSIC -->
+
+<audio
+    id="music"
+    preload="auto"
+    loop>
+
+    <source
+        src="./music.mp3"
+        type="audio/mpeg">
+
+</audio>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <div class="badge">
+            ✨ A little reminder for you ✨
+        </div>
+
+        <h1>
+            For my Favourite ✨❤️
+        </h1>
+
+        <div class="hero-message">
+
+            Hey You ❤️
+
+            <br><br>
+
+            I know things feel exhausting right now.
+            <br>
+            I know you're tired.
+            <br>
+            I know everything may feel like too much.
+
+            <span class="highlight">
+                YOU ARE STRONGER THAN THIS MOMENT. ✨
+            </span>
+
+            You don't have to solve everything today.
+            <br>
+            Take it one step at a time.
+            <br>
+            Rest when you need to.
+            <br>
+            Then get back up when you're ready.
+
+            <br><br>
+
+            I believe in you. ❤️
+
+        </div>
+
+
+        <button
+            class="main-btn"
+            type="button"
+            onclick="toggleMessage()">
+
+            Read This When You're Feeling Down ✨
+
+        </button>
+
+
+        <div
+            class="reveal glass"
+            id="hiddenMessage">
+
+            <div class="big-message">
+
+                Bad days don't define you.
+                <br>
+                Stress doesn't define you.
+                <br>
+                One difficult moment doesn't define your future.
+
+                <br><br>
+
+                You are still the same amazing person
+                with dreams, goals, and so much potential.
+
+                <br><br>
+
+                Keep going.
+                <br>
+                Slowly is still progress.
+                <br>
+                One small step is still a step forward. 🌸
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- REMEMBER WHO YOU ARE -->
+
+<section>
+
+    <h2 class="section-title">
+        Remember Who You Are 👑
+    </h2>
+
+
+    <div class="cards">
+
+        <div class="card glass">
+            ✨ You are capable.
+        </div>
+
+        <div class="card glass">
+            🌸 You are valuable.
+        </div>
+
+        <div class="card glass">
+            🔥 You are stronger than you think.
+        </div>
+
+        <div class="card glass">
+            💫 Your dreams are worth chasing.
+        </div>
+
+        <div class="card glass">
+            ❤️ You are loved and appreciated.
+        </div>
+
+        <div class="card glass">
+            🌙 It's okay to take a break.
+        </div>
+
+        <div class="card glass">
+            🚀 Your story is still being written.
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- WHEN EVERYTHING FEELS TOO MUCH -->
+
+<section>
+
+    <h2 class="section-title">
+        When Everything Feels Too Much
+    </h2>
+
+
+    <div class="glass big-message">
+
+        Stop.
+        <br>
+        Take a breath.
+        <br>
+        Forget everything for a moment.
+
+        <br><br>
+
+        You don't need to figure out your entire life today.
+
+        <br><br>
+
+        Just focus on the next small thing.
+
+        <br><br>
+
+        One task.
+        <br>
+        One step.
+        <br>
+        One day.
+
+        <br><br>
+
+        That's enough. ✨
+
+
+        <br>
+
+        <button
+            class="main-btn"
+            type="button"
+            onclick="keepGoing()">
+
+            I'M NOT GIVING UP 🔥
+
+        </button>
+
+
+        <div class="progress-container">
+
+            <div class="progress">
+
+                <div
+                    class="progress-bar"
+                    id="progressBar">
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div
+            class="reveal"
+            id="keepMessage">
+
+            <br><br>
+
+            <strong>
+                That's my girl. ❤️
+            </strong>
+
+            <br><br>
+
+            Keep going.
+            <br>
+            Your future self will be proud
+            that you didn't give up today.
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- PHOTO SECTION -->
+
+<section>
+
+    <h2 class="section-title">
+        A Little Reminder Of You ❤️
+    </h2>
+
+
+    <div class="gallery">
+
+        <div class="photo">
+
+            <img
+                src="./photo1.jpg"
+                alt="Beautiful memory">
+
+            <div class="photo-caption">
+                Keep smiling ✨
+            </div>
+
+        </div>
+
+
+        <div class="photo">
+
+            <img
+                src="./photo2.jpg"
+                alt="Beautiful memory">
+
+            <div class="photo-caption">
+                You've got this ❤️
+            </div>
+
+        </div>
+
+
+        <div class="photo">
+
+            <img
+                src="./photo3.jpg"
+                alt="Beautiful memory">
+
+            <div class="photo-caption">
+                Keep believing in yourself 🌸
+            </div>
+
+        </div>
+
+
+        <div class="photo">
+
+            <img
+                src="./photo4.jpg"
+                alt="Beautiful memory">
+
+            <div class="photo-caption">
+                Your best days are ahead 🚀
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- PERSONAL MESSAGE -->
+
+<section>
+
+    <h2 class="section-title">
+        A Little Message From Me ❤️
+    </h2>
+
+
+    <div class="glass personal">
+
+        Whatever happens,
+        please don't forget how much potential you have.
+
+        <br><br>
+
+        I Know aap damdar insaan ho.
+
+        <br><br>
+
+        So don't let one stressful day
+        make you forget who you are.
+
+        <br><br>
+
+        You've got this. ✨
+
+        <br><br>
+
+        And I'll always be cheering for you.
+
+    </div>
+
+</section>
+
+
+<!-- FINAL -->
+
+<section class="final">
+
+    <div class="final-content">
+
+        <h2 class="final-title">
+            YOUR STORY DOESN'T END ON A BAD DAY. 🌙✨
+        </h2>
+
+
+        <div class="final-text">
+
+            Tomorrow is another chance.
+            <br>
+            Another chance to smile.
+            <br>
+            Another chance to try.
+            <br>
+            Another chance to get closer to your dreams.
+
+            <br><br>
+
+            So rest today if you need to.
+
+            <br><br>
+
+            Then tomorrow...
+
+            <br><br>
+
+            <strong>
+                GET UP.
+                <br>
+                KEEP GOING.
+                <br>
+                AND SHOW THE WORLD WHAT YOU CAN DO. 🔥❤️
+            </strong>
+
+        </div>
+
+
+        <button
+            class="main-btn"
+            type="button"
+            onclick="celebrate()">
+
+            I'M READY FOR TOMORROW 🚀
+
+        </button>
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    Made especially for you Jannat ❤️✨
+
+</footer>
+
+
+<!-- FINAL CELEBRATION -->
+
+<div id="celebration">
+
+    <button
+        class="close-celebration"
+        type="button"
+        onclick="closeCelebration()">
+
+        ×
+
+    </button>
+
+
+    <div>
+
+        <div class="celebration-text">
+
+            One day at a time.
+            <br>
+            One step at a time.
+            <br>
+
+            You've got this. ❤️✨
+
+        </div>
+
+
+        <div class="celebration-sub">
+
+            Keep believing in yourself.
+            <br>
+            Your story is still being written. 🚀
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<script>
+
+/* =========================
+   CREATE STARS
+========================= */
+
+const starsContainer =
+    document.getElementById("stars");
+
+for(let i = 0; i < 130; i++){
+
+    const star =
+        document.createElement("div");
+
+    star.className = "star";
+
+    star.style.left =
+        Math.random() * 100 + "%";
+
+    star.style.top =
+        Math.random() * 100 + "%";
+
+    star.style.animationDelay =
+        Math.random() * 3 + "s";
+
+    star.style.animationDuration =
+        (2 + Math.random() * 4) + "s";
+
+    starsContainer.appendChild(star);
+}
+
+
+/* =========================
+   REVEAL MESSAGE
+========================= */
+
+function toggleMessage(){
+
+    const message =
+        document.getElementById("hiddenMessage");
+
+    message.classList.toggle("show");
+
+}
+
+
+/* =========================
+   KEEP GOING
+========================= */
+
+function keepGoing(){
+
+    const bar =
+        document.getElementById("progressBar");
+
+    const message =
+        document.getElementById("keepMessage");
+
+    bar.style.width = "100%";
+
+    message.classList.add("show");
+
+    createParticles();
+
+}
+
+
+/* =========================
+   MUSIC
+   FIXED VERSION
+========================= */
+
+const music =
+    document.getElementById("music");
+
+const musicButton =
+    document.getElementById("musicButton");
+
+
+musicButton.addEventListener("click", async function(){
+
+    try {
+
+        if (music.paused) {
+
+            /*
+             * Because this play() happens directly
+             * after the user's button click,
+             * Chrome should allow it.
+             */
+
+            await music.play();
+
+            musicButton.innerHTML =
+                "⏸ Pause Music";
+
+        } else {
+
+            music.pause();
+
+            musicButton.innerHTML =
+                "🎵 Play Music";
+
+        }
+
+    } catch(error) {
+
+        console.error(
+            "Music playback error:",
+            error
+        );
+
+        alert(
+            "The music file could not be played. Please check that music.mp3 is in the same folder as index.html."
+        );
+
+    }
+
+});
+
+
+/*
+ * If music finishes naturally,
+ * return button to Play Music.
+ */
+
+music.addEventListener("ended", function(){
+
+    musicButton.innerHTML =
+        "🎵 Play Music";
+
+});
+
+
+/*
+ * Keep button state correct
+ * if music is paused from another action.
+ */
+
+music.addEventListener("pause", function(){
+
+    if (!music.ended) {
+
+        musicButton.innerHTML =
+            "🎵 Play Music";
+
+    }
+
+});
+
+
+music.addEventListener("play", function(){
+
+    musicButton.innerHTML =
+        "⏸ Pause Music";
+
+});
+
+
+/* =========================
+   PARTICLES
+========================= */
+
+function createParticles(){
+
+    const symbols = [
+        "✨",
+        "❤️",
+        "🌸",
+        "💫",
+        "⭐",
+        "🌙"
+    ];
+
+    for(let i = 0; i < 25; i++){
+
+        const particle =
+            document.createElement("div");
+
+        particle.className =
+            "particle";
+
+        particle.innerHTML =
+            symbols[
+                Math.floor(
+                    Math.random() * symbols.length
+                )
+            ];
+
+        particle.style.left =
+            Math.random() * 100 + "vw";
+
+        particle.style.bottom =
+            "-30px";
+
+        particle.style.animationDuration =
+            (3 + Math.random() * 4) + "s";
+
+        particle.style.fontSize =
+            (15 + Math.random() * 20) + "px";
+
+        document.body.appendChild(particle);
+
+
+        setTimeout(function(){
+
+            particle.remove();
+
+        }, 7000);
+
+    }
+
+}
+
+
+/* =========================
+   FINAL CELEBRATION
+========================= */
+
+function celebrate(){
+
+    const celebration =
+        document.getElementById("celebration");
+
+    celebration.classList.add("active");
+
+    createParticles();
+
+    setTimeout(createParticles, 700);
+
+    setTimeout(createParticles, 1400);
+
+    setTimeout(createParticles, 2100);
+
+}
+
+
+function closeCelebration(){
+
+    document
+        .getElementById("celebration")
+        .classList.remove("active");
+
+}
+
+
+/* =========================
+   AUTOMATIC GENTLE PARTICLES
+========================= */
+
+setInterval(function(){
+
+    if(Math.random() > 0.55){
+
+        const symbols = [
+            "✨",
+            "⭐",
+            "💫"
+        ];
+
+        const particle =
+            document.createElement("div");
+
+        particle.className =
+            "particle";
+
+        particle.innerHTML =
+            symbols[
+                Math.floor(
+                    Math.random() * symbols.length
+                )
+            ];
+
+        particle.style.left =
+            Math.random() * 100 + "vw";
+
+        particle.style.bottom =
+            "-20px";
+
+        particle.style.opacity =
+            "0.4";
+
+        particle.style.animationDuration =
+            "7s";
+
+        document.body.appendChild(particle);
+
+        setTimeout(function(){
+
+            particle.remove();
+
+        }, 7000);
+
+    }
+
+}, 1800);
+
+</script>
+
+</body>
+</html>
